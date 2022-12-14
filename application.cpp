@@ -7,5 +7,10 @@
  */
 
 #include "mainprog.h"
-// Ready to play!
-int main() { return go(); }
+
+int main() 
+{ 
+  system("clear");
+  // Ready to play!
+  return go(); 
+}
