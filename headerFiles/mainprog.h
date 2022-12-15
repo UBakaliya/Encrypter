@@ -48,10 +48,8 @@ int go()
     {
         choice = menu();
         if (is123456(choice))
-        {
             do123456(choice, filename, isFile, frequencyMap,
                      encodingTree, encodingMap);
-        }
         else if (choice == "C")
         {
             cout << "Enter filename: ";
@@ -77,7 +75,6 @@ int go()
             printTextFile(filename);
         }
     }
-
     return 0;
 }
 
@@ -87,7 +84,6 @@ int go()
 //
 string menu()
 {
-    cout << "Welcome to the file compression app!" << endl;
     cout << "1.  Build character frequency map" << endl;
     cout << "2.  Build encoding tree" << endl;
     cout << "3.  Build encoding map" << endl;
@@ -140,13 +136,9 @@ void do123456(string choice, string &filename, bool &isFile,
         cin >> fORs;
         isFile = (fORs == "F" ? true : false);
         if (isFile)
-        {
             cout << "Enter file name: ";
-        }
         else
-        {
             cout << "Enter string: ";
-        }
         cin >> filename;
     }
     // Build Frequency Map
@@ -262,45 +254,25 @@ void do123456(string choice, string &filename, bool &isFile,
 string printChar(int ch)
 {
     if (ch == '\n')
-    {
         return "'\\n'";
-    }
     else if (ch == '\t')
-    {
         return "'\\t'";
-    }
     else if (ch == '\r')
-    {
         return "'\\r'";
-    }
     else if (ch == '\f')
-    {
         return "'\\f'";
-    }
     else if (ch == '\b')
-    {
         return "'\\b'";
-    }
     else if (ch == '\0')
-    {
         return "'\\0'";
-    }
     else if (ch == ' ')
-    {
         return "' '";
-    }
     else if (ch == (int)PSEUDO_EOF)
-    {
         return "EOF";
-    }
     else if (ch == (int)NOT_A_CHAR)
-    {
         return "N/A";
-    }
     else
-    {
         return string("'") + (char)ch + string("'");
-    }
 }
 
 //
@@ -336,9 +308,7 @@ void printMap(hashmapE &map)
 void printTree(HuffmanNode *node, string str)
 {
     if (node == nullptr)
-    {
         return;
-    }
     else
     {
         cout << str << "{" << printChar(node->character);
@@ -359,9 +329,7 @@ void printTextFile(string filename)
     cout << filename << endl;
     ifstream inFile(filename);
     if (!inFile.is_open())
-    {
         cout << "File does not exist." << endl;
-    }
     while (true)
     {
         char ch = inFile.get();
@@ -381,9 +349,7 @@ void printBinaryFile(string filename)
     cout << filename << endl;
     ifbitstream input(filename);
     if (!input.is_open())
-    {
         cout << "File does not exist." << endl;
-    }
     int i = 0;
     while (true)
     {
@@ -393,13 +359,9 @@ void printBinaryFile(string filename)
             break;
         cout << bit;
         if (i > 0 && i % 8 == 0)
-        {
             cout << " ";
-        }
         if (i > 0 && i % 64 == 0)
-        {
             cout << endl;
-        }
     }
     cout << endl;
 }

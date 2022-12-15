@@ -6,11 +6,13 @@
  * @copyright Copyright (c)UB 2022
  */
 
-#include "mainprog.h"
+#include "headerFiles/mainprog.h"
 
-int main() 
-{ 
+int main()
+{
   system("clear");
+  cout << "*** Welcome to the file compression app! ***\n"
+       << endl;
   // Ready to play!
-  return go(); 
+  return go();
 }
