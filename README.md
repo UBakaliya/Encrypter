@@ -20,21 +20,21 @@ Call ```make run``` on your console to start the program. Enjoy 😉.
 
 - Here is a screenshot of the application in action:
 
-![Drag Racing](output_img/m1.png)
+![Drag Racing](output_Img/m1.png)
 
-![Drag Racing](output_img/m2.png)
+![Drag Racing](output_Img/m2.png)
 
-![Drag Racing](output_img/m3.png)
+![Drag Racing](output_Img/m3.png)
 
-![Drag Racing](output_img/m4.png)
+![Drag Racing](output_Img/m4.png)
 
-![Drag Racing](output_img/m5.png)
+![Drag Racing](output_Img/m5.png)
 
-![Drag Racing](output_img/m6.png)
+![Drag Racing](output_Img/m6.png)
 
-![Drag Racing](output_img/B.png)
+![Drag Racing](output_Img/B.png)
 
-![Drag Racing](output_img/T.png)
+![Drag Racing](output_Img/T.png)
 
 
 
